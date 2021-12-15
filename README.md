@@ -1,15 +1,16 @@
-Insert header
-
 # **EXCM-Python**
 ## EMCX "smart motor" Driver used with a Festo EXCM
 
-Insert image here
+![image](https://user-images.githubusercontent.com/71296226/146245408-a2cb202a-7c28-4657-962c-d6fb2600f2d7.png) 
+
 
 # Documentation
 * [Motor](Docs/PD2C_CANopen_Technical-Manual_V2.0.1.pdf)
 * [EXCM Assembly](https://www.festo.com/net/SupportPortal/Files/448653/YXMx_assembly_adjustment_cabling.pdf)
 
-Insert image here
+# Pin Assignment
+
+![CANMOTORPINASSIGN](https://user-images.githubusercontent.com/71296226/146244913-4d718cba-84ef-4920-8d67-20355c463699.PNG)
 
 # Hardware Set Up
 * Connect 24V to pins A1 and A3, and ground pins A2 and A4
@@ -19,7 +20,7 @@ Insert image here
 * The rotary switch on the bottom of the motor selects the Node-ID and default baudrate
 * If errors occur, attempt power cycling the motor and CAN bus line
 
-Insert image here
+![CANMOTORROTARYSWITCH](https://user-images.githubusercontent.com/71296226/146244932-f043a585-3e10-4e49-bc2e-ab54d717b97c.PNG)
 
 # Software Set Up
 * Some Linux based systems can only work at up to 500 kbps, but the default motor baudrate is 1 mbps so you may need to change this value using an interface such as Busmaster (CAN to USB?)
@@ -45,10 +46,12 @@ Insert image here
     * Status Word: See Table Below
     * Initiated when setHomingMethod(-1) is called to set the homing method to "Homing on Block", and bit 5 is set on the control word (0x1F)
 
-Insert image here
+![CANMOTORHOMINGSTATUS](https://user-images.githubusercontent.com/71296226/146244974-a0fdb176-1ac4-4f60-aeda-6a08cac6b834.PNG)
 
 # States
-Insert multiple images here
+![CANMOTORSTATESDIAGRAM](https://user-images.githubusercontent.com/71296226/146245001-a2d95e8a-ca75-481a-9eb2-2ce9ab288255.PNG)
+![CANMOTORSTATESCW](https://user-images.githubusercontent.com/71296226/146245008-22bc3638-36c8-4ee2-b670-97fae8129cbc.PNG)
+![CANMOTORSTATESSW](https://user-images.githubusercontent.com/71296226/146245017-dee8afa3-e4f0-4f98-a2c2-3fe88545eef1.PNG)
 
 ## Control Word
 * Bits 0 to 9:
