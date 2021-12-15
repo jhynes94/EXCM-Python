@@ -13,12 +13,12 @@
 ![CANMOTORPINASSIGN](https://user-images.githubusercontent.com/71296226/146244913-4d718cba-84ef-4920-8d67-20355c463699.PNG)
 
 # Hardware Set Up
-* Connect 24V to pins A1 and A3, and ground pins A2 and A4
-* Pins A6 and A7 are CAN high and low respectively
-* The dip switch (S1) is the bus termination resistor switch (120 ohm)
-* For most cases this switch will be left in the off position, closer to the motor
-* The rotary switch on the bottom of the motor selects the Node-ID and default baudrate
-* If errors occur, attempt power cycling the motor and CAN bus line
+1. Connect 24V to pins A1 and A3, and ground pins A2 and A4
+2. Pins A6 and A7 are CAN high and low respectively
+3. The dip switch (S1) is the bus termination resistor switch (120 ohm)
+4. For most cases this switch will be left in the off position, closer to the motor
+5. The rotary switch on the bottom of the motor selects the Node-ID and default baudrate
+* Note: If errors occur, attempt power cycling the motor and CAN bus line
 
 ![CANMOTORROTARYSWITCH](https://user-images.githubusercontent.com/71296226/146244932-f043a585-3e10-4e49-bc2e-ab54d717b97c.PNG)
 
