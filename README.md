@@ -23,8 +23,8 @@
 ![CANMOTORROTARYSWITCH](https://user-images.githubusercontent.com/71296226/146244932-f043a585-3e10-4e49-bc2e-ab54d717b97c.PNG)
 
 # Software Set Up
-* Some Linux based systems can only work at up to 500 kbps, but the default motor baudrate is 1 mbps so you may need to change this value using an interface such as Busmaster (CAN to USB?)
-* To change the Baudrate the rotary switch must be at 8 or above
+* The default motor baudrate is 1 mbps, but you need to change this value to 500 kbps using an interface such as Busmaster (CAN to USB?)
+* To change the Baudrate the rotary switch must initially be at 8 or above
 * On start up, the motor is in closed loop mode with encoders
 * Download the PD2_C.py motor driver and objectDict.py files which allow you to get and set the object registers needed for homing, velocity mode, and positioning mode
 * The firware version may not support position/velocity units, in this case use position/velocity encoder resolution
